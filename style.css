@@ -1,0 +1,138 @@
+:root {
+  /* Primary */
+  --Darkcyan: hsl(185, 75%, 39%);
+  --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --Darkgrayishblue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --Darkgray: hsl(0, 0%, 59%);
+  /* Font */
+  --mainFont: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--mainFont);
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--Darkcyan);
+}
+
+.card {
+  z-index: 100;
+  max-width: 32.6rem;
+
+  border-radius: 12px;
+  background-color: #fff;
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.profilePic {
+  margin-top: -5rem;
+  margin-bottom: 2.4rem;
+
+  width: 9.6rem;
+  height: 9.6rem;
+  border: 5px solid white;
+  border-radius: 50%;
+
+  box-sizing: content-box;
+}
+
+.victorCrest {
+  margin-bottom: 1.3rem;
+}
+
+.victorCrest > span {
+  font-weight: 700;
+}
+
+.london {
+  margin-bottom: 2.8rem;
+  font-size: 1.4rem;
+}
+
+hr {
+  margin-bottom: 2.4rem;
+  background-color: #e8e9ec;
+  height: 1px;
+  border: none;
+}
+
+.statsContainer {
+  margin-bottom: 2.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.statsContainer span {
+  font-weight: 700;
+}
+
+.statsContainer p {
+  margin-top: 0.9rem;
+
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+/****** bg circles ******/
+.topCircle {
+  position: absolute;
+  width: 62.2rem;
+  height: 62.2rem;
+  top: 0;
+  left: 0;
+  transform: translate(-70%, -50%);
+}
+
+.bottomCircle {
+  position: absolute;
+  width: 62.2rem;
+  height: 62.2rem;
+  bottom: 0;
+  right: 0;
+  transform: translate(70%, 50%);
+}
+
+@media (min-width: 1000px) {
+  .card {
+    max-width: 35rem;
+  }
+
+  /****** bg circles ******/
+  .topCircle {
+    position: absolute;
+    width: 97.8rem;
+    height: 97.8rem;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottomCircle {
+    position: absolute;
+    width: 97.8rem;
+    height: 97.8rem;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+  }
+}
